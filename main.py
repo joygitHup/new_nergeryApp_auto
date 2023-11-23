@@ -1,16 +1,13 @@
-# This is a sample Python script.
+import time
+import unittest
+import pytest
+from config import config
+from config.config import test_all_path, REPORT_SAVE_PATH
+def creat_suite():
+   suiteTest_defaultTestLoader = unittest.defaultTestLoader.discover(start_dir=test_all_path, pattern='test_*.py',
+                                                                     top_level_dir=None)
+   return suiteTest_defaultTestLoader
+suite = creat_suite()
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+if  __name__=="__main__":
+    pytest.main([r'--alluredir={}'.format(REPORT_SAVE_PATH)])
