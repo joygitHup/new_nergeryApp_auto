@@ -11,8 +11,7 @@ FilePath={
 REPORT_PATH=FilePath['filePath']['report_path']
 REPORT_SAVE_PATH=FilePath['filePath']['report_save_path']
 # LOG_SAVE_PATH=FilePath['filePath']['log_save_path']
-SccreShort_SAVE_PATH=FilePath['filePath']['SccreShort_save_path']
-
+# SccreShort_SAVE_PATH=FilePath['filePath']['SccreShort_save_path']
 
 """所有测试用例的位置"""
 test_all_path=FilePath['filePath']['all_test_position']
