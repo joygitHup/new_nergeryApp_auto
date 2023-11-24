@@ -1,7 +1,6 @@
 class Test_index():
     def test_project_account(self):
         """项目总数核对"""
-
         print("项目总数检查")
     def test_opration_allinfor(self):
         """运营统计模块基于所有项目的信息"""
